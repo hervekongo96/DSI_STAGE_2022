@@ -1,0 +1,122 @@
+body, html{
+    
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+
+    background-color: rgb(160, 154, 154);
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#cardheader{
+    background-color: rgb(106, 7, 219);
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-width: 0px; 
+}
+#card{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+#form-control{
+    border-top-color:#fff;
+    border-left-color: #fff;
+    border-right-color: #fff;
+    text-decoration-color: #fff;
+    background-color: #fff;
+}
+input[type="text"]{
+    font-size: 15px;
+    margin-top: 20px;
+}
+input[placeholder]{
+    padding-left: 0px;
+}
+input[type="radio"]{
+    margin-top: 20px;
+}
+label{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+button[type="submit"]{
+    font-size: 15px;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+/* header */
+
+.header{
+    background-color: #3498DB;
+    height: 78px;
+    line-height: 70px;
+    /*margin-right: 0%;*/
+    
+}
+.logo{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    float: left;
+}
+.menu{
+    float: right;
+    margin-right: 0%;
+}
+.menu a {
+    color: #fff;
+    margin-right: 20px;
+}
+.menu a:hover {
+    color: #2C3E58;
+}
+/*bannière*/
+
+.banner {
+    width: 100%;
+    max-width: 100%;
+}
+.ban{
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+}
+.ban img {
+  width: 90%;
+  max-width: 90%;
+  
+   
+}
+.inner-banner{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+}
+.inner-banner h1 {
+    color: #ffffff;
+    text-shadow: 1px 1px 18px #000000;
+}
+
+.inner-banner .btn-custon {
+    background-color: #3498DB;
+    color: #fff;
+}
+.inner-banner .btn-custon:hover{
+    background-color: #2C3E58;
+}

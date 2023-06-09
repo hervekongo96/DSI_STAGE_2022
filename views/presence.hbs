@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Herve Kongo 0812808199 hervekongo.hk@gmail.com">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600" async defer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" async defer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.2/venobox.css" async defer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" async defer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" async defer>
+        <link rel="stylesheet" href="/styles.css">
+        <link rel="stylesheet" href="/css/bootstrap1.min.css">
+        <title>SCPT-DSI</title>
+    </head>
+    <body>
+        <nav>
+            <h5 class="brand">SCPT-DSI</h5>
+            <ul>
+                <li><a href="/login">Déconnecter</a></li>
+            </ul>
+            <div style="clear: both"></div>
+        </nav>
+
+        <div class="container mt-5">
+            {{#if message}}
+                <h3 class="alert alert-success mt-4">{{message}}</h3>
+            {{/if}}
+            <div class="card">
+                 <div class="card-header">
+                        Présence
+                </div>
+                    <div class="card-body">
+                            <form action="/auth/presence" method="POST">
+                                <div class="form-group">
+                                    <label for="nom">Nom</label>
+                                    <input type="text" name="nom" autocomplete="off" id="nom" value="" class="form-control">
+                                </div>
+                                <div class="form-group"> 
+                                    <label for="postnom">postnom</label>
+                                    <input type="text" name="postnom" autocomplete="off" id="postnom" value="" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="prenom">Prenom</label>
+                                    <input type="text" name="prenom" autocomplete="off" id="prenom" value="" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-sm btn-success">Envoyer</button>
+                                </div>
+                            </form>
+                       
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>

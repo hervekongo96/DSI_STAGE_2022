@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+nav {
+    width: 100%;
+    background: #563d7c;
+    padding: 0 50px;
+    box-sizing: border-box;
+    color: #fff;
+}
+nav h5{
+    margin: 0;
+    padding: 15px 20px;
+    float: left;
+}
+nav h1 a {
+    color: #fff;
+    text-decoration: none;
+}
+nav ul {
+    
+    margin: 0;
+    padding: 0;
+    float: right;
+   
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 15px;
+    transition: .5s;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+nav ul li a:hover {
+    color: yellow;
+    text-decoration: none;
+}

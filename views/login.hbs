@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Herve Kongo 0812808199 hervekongo.hk@gmail.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600" async defer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" async defer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.2/venobox.css" async defer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" async defer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" async defer>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>SCPT-DSI</title>
+</head>
+<body>
+        <nav>
+            <h5 class="brand">SCPT-DSI</h5>
+            <ul>
+                <li><a href="/www.scpt-dsi.cd">Accueil</a></li>
+                <li><a href="/registrer">Créez compte</a></li>
+            </ul>
+            <div style="clear: both"></div>
+        </nav>
+        <br><br><br>
+        <div class="container mt-5">
+            <div class="col-md-6 m-auto">
+               <div class="card" >
+                 <div class="card-header">
+                     Se connecter
+                 </div>
+                    <div class="card-body">
+                        <form action="/auth/login" method="POST">
+                            
+                            <div class="form-group">
+                                <label for="text">Pseudo Nom</label>
+                                <input type="text" class="form-control" autocomplete="off" id="pseudo" name="pseudo">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Mot de Passe</label>
+                                <input type="password" class="form-control" autocomplete="off" id="password" name="password">
+                            </div>
+                          
+                            <button type="submit" class="btn btn-primary">se connecter</button>
+                        </form>
+                    </div>
+            </div>
+            <br>
+            <div>
+              {{#if message}}
+                <h7 class="alert alert-success mt-4">{{message}}</h7>
+              {{/if}}
+            </div>
+        </div>
+</body> 
+</html>
